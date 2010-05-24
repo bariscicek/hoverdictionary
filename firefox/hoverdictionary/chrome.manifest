@@ -1,8 +1,4 @@
-content	hoverdictionary	chrome/content/
-content	hoverdictionary	chrome/content/ contentaccessible=yes
-overlay	chrome://browser/chrome/browser.xul	chrome://hoverdictionary/content/browser.xul
+content hoverdictionary	chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul	chrome://hoverdictionary/content/browser.xul
 
 locale	hoverdictionary	en-US	locale/en-US/
-
-skin	hoverdictionary	classic/1.0	skin/
-style	chrome://global/content/customizeToolbar.xul	chrome://hoverdictionary/skin/skin.css

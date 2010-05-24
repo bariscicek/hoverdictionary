@@ -1,13 +1,20 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://hoverdictionary/skin/skin.css" type="text/css"?>
-<!DOCTYPE linktargetfinder SYSTEM "chrome://hoverdictionary/locale/translations.dtd">
+<!DOCTYPE overlay SYSTEM "chrome://hoverdictionary/locale/translations.dtd">
 <overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-
-<script src="hoverDictionary.js" />
+<script type="application/x-javascript" src="hoverDictionary.js" />
 
 <menupopup id="menu_ToolsPopup">
-			<menuitem label="&runhoverdictionary;" key="hover-dictionary-menu-item" oncommand="hoverDictionary.run()"/>
+			<menuitem id="hover_dictionary_tools" key="hover-dictionary-key" label="Hover Dictionary" oncommand="run()"/>
 </menupopup>
 
+<keyset>
+	<key id="hover-dictionary-key" modifiers="accel alt shift" key="L" />
+</keyset>
+
+<popup id="contentAreaContextMenu">
+	<menuitem label="Hover Dictionary" id="hover_dictionary_context_menuitem"/>
+</popup>
+	
 
 </overlay>
